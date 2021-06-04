@@ -1,0 +1,99 @@
+<html>
+<head>
+
+	<title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="body" background="logo.jpg">
+  <center>
+      <img src="stone.jpg" id="stone1"><h4 id="number">5</h4>
+    <img src="btsblackpink.jpg" id="BTS">
+    <br>
+    <br>
+    <br>
+    <br>
+    <button onclick="play_anpanman()" id="songs"><img src="cd.jpg" id="cd"> BTS - Anpanman <img src="play.png" id="play"></button>
+    <br><br>
+    <button onclick="play_as_if_last_bp()" id="songs"><img src="cd.jpg" id="cd"> BLACKPINK - As if it's your last <img src="play.png" id="play"></button>
+    <br><br>
+    <button onclick="play_butter()" id="songs"><img src="cd.jpg" id="cd"> BTS - Butter <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_bet_you_wanna()" id="songs"><img src="cd.jpg" id="cd"> BLACKPINK - Bet you wanna <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_cyper_pt4()" id="songs"><img src="cd.jpg" id="cd"> BTS - Cyper pt4 - RAP line <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_crazy_over_you()" id="songs"><img src="cd.jpg" id="cd"> BLACKPINK - Crazy over you <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_dynamite()" id="songs"><img src="cd.jpg" id="cd"> BTS - Dynamite <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_ddu()" id="songs"><img src="cd.jpg" id="cd"> BLACKPINK - DDU DU DDU DU <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_young_forever()" id="songs"><img src="cd.jpg" id="cd"> BTS - Epilouge - Young forever <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_eyes_closed()" id="songs"><img src="cd.jpg" id="cd"> BLACKPINK - Eyes closed <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_Fake_love()" id="songs"><img src="cd.jpg" id="cd"> BTS - Fake Love <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_forever_young()" id="songs"><img src="cd.jpg" id="cd"> BLACKPINK - Forever Young <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_go_go()" id="songs"><img src="cd.jpg" id="cd"> BTS - Go Go <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_gg()" id="songs"><img src="cd.jpg" id="cd"> BLACKPINK - GG BE Feat-jennie <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_home()" id="songs"><img src="cd.jpg" id="cd"> BTS - Home <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_how_you_like_that()" id="songs"><img src="cd.jpg" id="cd"> BLACKPINK - How you like that <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_I_NEED_U()" id="songs"><img src="cd.jpg" id="cd"> BTS - I Need U <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_ddu()" id="songs"><img src="cd.jpg" id="cd"> BLACKPINK - Ice-cream <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_just_one_day()" id="songs"><img src="cd.jpg" id="cd"> BTS - Just one day <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_just_dance()" id="songs"><img src="cd.jpg" id="cd"> BLACKPINK - just dance <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_kill_this_love()" id="songs"><img src="cd.jpg" id="cd"> BLACKPINK - Kill This Love <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_LOUDER_THAN_BOMBS()" id="songs"><img src="cd.jpg" id="cd"> BTS - Louder Than Bombs <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_bet_you_wanna()" id="songs"><img src="cd.jpg" id="cd"> BLACKPINK - Let it be you & i only look at me <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_magic_shop()" id="songs"><img src="cd.jpg" id="cd"> BTS - Magic shop <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_no()" id="songs"><img src="cd.jpg" id="cd"> BTS - N.O <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_OUTRO()" id="songs"><img src="cd.jpg" id="cd"> BTS - outro <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_pied_piper()" id="songs"><img src="cd.jpg" id="cd"> BTS - Pied piper<img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_playing_fire()" id="songs"><img src="cd.jpg" id="cd"> BLACKPINK - Playing with fire <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_Run()" id="songs"><img src="cd.jpg" id="cd"> BTS - RUN <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_SAVEme()" id="songs"><img src="cd.jpg" id="cd"> BTS - Save Me <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_telepathy()" id="songs"><img src="cd.jpg" id="cd"> BTS - Telepathy <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_ugh()" id="songs"><img src="cd.jpg" id="cd"> BTS - UGH - RAP Line <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_Voice()" id="songs"><img src="cd.jpg" id="cd"> BTS - voice - RM <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_war_of_harmone()" id="songs"><img src="cd.jpg" id="cd"> BTS - War of hormones <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_whistle()" id="songs"><img src="cd.jpg" id="cd"> BLACKPINK - Whistle <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_I_NEED_U()" id="songs"><img src="cd.jpg" id="cd"> BTS - Your Eyes tell <img src="img-silver.png" id="stone"></button>
+    <br><br>
+    <button onclick="play_ddu()" id="songs"><img src="cd.jpg" id="cd"> BTS - Zero'o clock  <img src="img-silver.png" id="stone"></button>
+</center>
+</body>
+<script src="main.js"></script>

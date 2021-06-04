@@ -1,0 +1,60 @@
+#BTS
+{
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+    motion-rotation: auto;
+    background-size: cover;
+}
+#stone
+{
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    size: cover;
+    float: right;
+    border-radius: 100px;
+}
+#songs
+{
+    font-family: fantasy;
+    font-size: large;
+    width: 400px;
+    border-radius: 100px;
+    background-color: white;
+    position: center;
+}
+#cd
+{
+    float: left;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    background-color: violet;
+}
+#stone1
+{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    float: left;
+}
+#play
+{
+    height: 50px;
+    width: 50px;
+    float: right;
+    border-radius: 100px;
+}
+#number
+{
+   position: top;
+   height: 40px;
+    width: 20px;
+    background-color: white;
+    float: left;
+}
+#body
+{
+    background-size: cover;
+}
